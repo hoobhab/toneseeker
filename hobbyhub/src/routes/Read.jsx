@@ -11,7 +11,7 @@ const Read = () => {
         const fetchposts = async () => {
             const { data } = await supabase
                 .from('Posts')
-                .select();
+                .select().order("created_at", {ascending: false});
                 setPosts(data)
         }
         fetchposts()
