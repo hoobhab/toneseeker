@@ -15,7 +15,12 @@ h1 {
 }
 
 body {
-  background-color: #ccbcbc;
+  background-color: #ffffff;
+  background-image: url('./assets/bg.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position-x: right;
 }
 
 textarea {
@@ -133,6 +138,7 @@ input[type=submit]:hover{
   background-color: #fcfcfc;
   cursor: pointer;
   transition: border-color 0.25s;
+  margin-bottom: 5%
 }
 
 .detail-upvotes-button {
@@ -145,7 +151,12 @@ input[type=submit]:hover{
   overflow:auto
 }
 
-
+.detail-option-buttons{
+  display:inline-table;
+  float: right;
+  position: relative;
+  top: -20px;
+}
 
 .detail-page {
   justify-items: left;
@@ -156,6 +167,39 @@ input[type=submit]:hover{
   background-color: rgb(243, 243, 243);
   width: 60vw;
   text-align: left;
+  margin-top: 60px;
+}
+
+.comment-box{
+  justify-items: left;
+  justify-content: left;
+  float: left;
+  border: 1px solid;
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: rgb(243, 243, 243);
+  width: 50vw;
+  text-align: left;
+  display: inline-table;
+}
+
+.submit-comment{
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #fcfcfc;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.detail-header{
+  margin-top: -3%
 }
 
 .detail-delete {
@@ -260,5 +304,15 @@ input[type=submit]:hover{
   border-radius: 10px;
   background-color: rgb(243, 243, 243);
   width: 60vw;
+  text-align: left;
+}
+
+.update-page{
+  margin-top: 70px;
+}
+
+.update-form{
+  justify-items: left;
+  justify-content: left;
   text-align: left;
 }
