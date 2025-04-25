@@ -19,7 +19,7 @@ const Card = (props) => {
       <div className="post-created-at">
         {props.created_at}
       </div>
-      <p className="description">{props.description}</p>
+      <br></br>
       <div className="upvote-button">
         ⬆️  {props.upvotes}
       </div>

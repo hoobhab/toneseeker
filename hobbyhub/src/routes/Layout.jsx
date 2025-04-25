@@ -16,6 +16,9 @@ const Layout = () => {
         <Link to="/">
         <button className="sidebar-home"> Home </button>
         </Link>
+        <Link to="/new">
+        <button type="button" className="sidebar-new"> Create Post </button>
+        </Link>
         <Link to="/about">
         <button type="button" className="sidebar-about"> About Us </button>
         </Link>

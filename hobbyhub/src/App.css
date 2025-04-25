@@ -145,6 +145,8 @@ input[type=submit]:hover{
   overflow:auto
 }
 
+
+
 .detail-page {
   justify-items: left;
   justify-content: left;
@@ -223,6 +225,12 @@ input[type=submit]:hover{
   border: solid 1px black
 }
 
+.sidebar-new {
+  margin-top: 10px;
+  width: 196px;
+  border: solid 1px black
+}
+
 .loader {
   width: 48px;
   height: 48px;
@@ -243,3 +251,14 @@ input[type=submit]:hover{
     display: inline;
     padding-left: 10px;
   }
+  
+  .update-current-info{
+  justify-items: left;
+  justify-content: left;
+  border: 1px solid;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(243, 243, 243);
+  width: 60vw;
+  text-align: left;
+}
