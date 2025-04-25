@@ -27,6 +27,8 @@ const Read = () => {
                         title={post.title}
                         description={post.description}
                         image={post.image}
+                        upvotes={post.upvotes}
+                        created_at={post.created_at}
                         />
                     ) : <span class="loader"></span>
             }

@@ -10,18 +10,19 @@ const Card = (props) => {
       <Link to={"update/" + props.id}>
         <button className="edit-button">Edit</button>
       </Link>
-      <h2 className="title">{props.title}</h2>
-      <Link to={"details/" + props.id}>
-        <div className="spyglass">🔎</div>
+      <Link style={{ color: "black"}} to={"details/" + props.id}>
+      <h2 className="title">{props.title}
+        {props.image ?
+          <div className="photo-icon">📷</div>
+          : null}</h2>
       </Link>
+      <div className="post-created-at">
+        {props.created_at}
+      </div>
       <p className="description">{props.description}</p>
-      {props.image ?
-      <p className="image">
-        <img 
-        src={props.image}
-        />
-      </p>
-      : null}
+      <div className="upvote-button">
+        ⬆️  {props.upvotes}
+      </div>
     </div>
   );
 };

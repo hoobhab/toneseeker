@@ -4,43 +4,53 @@ import { useState, useEffect } from "react";
 import { supabase } from "../client";
 import Card from "../components/Card";
 
-const DetailView = ({}) => {
+const DetailView = ({ }) => {
   const { id } = useParams();
-  const [adv, getAdv] = useState({});
+  const [post, getPost] = useState({});
 
   useEffect(() => {
-    // READ selected adv from table
-    const fetchAdv = async () => {
-      const { data } = await supabase.from("Adventurers").select().eq("id", id);
-      // set state of adv
-      getAdv(data[0]);
+    // READ selected post from table
+    const fetchPost = async () => {
+      const { data } = await supabase.from("Posts").select().eq("id", id);
+      // set state of post
+      getPost(data[0]);
     };
-    fetchAdv();
+    fetchPost();
   }, []);
 
-  const deleteAdventurer = async (event) => {
+  const deletePost = async (event) => {
     event.preventDefault();
 
-    await supabase.from("Adventurers").delete().eq("id", id);
+    await supabase.from("Posts").delete().eq("id", id);
 
     window.location = "/";
   };
 
+  const incrementUpvotes = async (event) => {
+
+  }
+
   return (
     <div className="detail-page">
-      <h1>{adv.name}</h1>
-      <p className="race">Race: {adv.race}</p>
-      <p className="class">Class: {adv.class}</p>
-      <p className="level">Level: {adv.level}</p>
-      <p className="player">Player: {adv.player}</p>
-      <div className="detail-description">
-        <p className="description">{adv.description}</p>
+      <div className="detail-header">
+      <h2>{post.title}</h2>
       </div>
-      <button className="detail-update">
-        <Link to={"/" + "update/" + id}>Update Adventurer</Link>
+      <p className="description">
+        {post.description}
+      </p>
+      <p className="detail-image">
+        <img src={post.image} />
+      </p>
+      <div className="detail-upvotes">
+        <button className="detail-upvotes-button">
+          {post.upvotes}⬆️
+        </button>
+      </div>
+      <button className="detail-update" onClick={incrementUpvotes}>
+        <Link to={"/" + "update/" + id}>Update post</Link>
       </button>
-      <button className="detail-delete" onClick={deleteAdventurer}>
-        Delete Adventurer
+      <button className="detail-delete" onClick={deletePost}>
+        Delete Post
       </button>
     </div>
   );

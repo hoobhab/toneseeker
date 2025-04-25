@@ -7,7 +7,8 @@ const New = () => {
   const [newPost, setNewPost] = useState({
     title: "",
     description: null,
-    image: null
+    image: null,
+    upvotes: 0
   });
 
   const handleChange = (event) => {
@@ -29,6 +30,7 @@ const New = () => {
         title: newPost.title,
         description: newPost.description,
         image: newPost.image,
+        upvotes: newPost.upvotes
       })
       .select();
 

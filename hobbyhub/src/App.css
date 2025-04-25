@@ -15,7 +15,7 @@ h1 {
 }
 
 body {
-  background-color: #ebebeb;
+  background-color: #ccbcbc;
 }
 
 textarea {
@@ -135,6 +135,27 @@ input[type=submit]:hover{
   transition: border-color 0.25s;
 }
 
+.detail-upvotes-button {
+  background-color: rgba(223, 222, 222, 0);
+  margin-bottom: 6px;
+  color: black;
+}
+
+.detail-image {
+  overflow:auto
+}
+
+.detail-page {
+  justify-items: left;
+  justify-content: left;
+  border: 1px solid;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: rgb(243, 243, 243);
+  width: 60vw;
+  text-align: left;
+}
+
 .detail-delete {
   border-radius: 8px;
   border: 1px solid black;
@@ -211,4 +232,14 @@ input[type=submit]:hover{
   display: inline-block;
   box-sizing: border-box;
   animation: rotation 1s linear infinite;
+  }
+
+  .about-paragraph {
+    justify-self: center;
+    width: 70%;
+  }
+  
+  .photo-icon{
+    display: inline;
+    padding-left: 10px;
   }
