@@ -4,7 +4,7 @@ Submitted by: Wesley Alejandro
 
 This web app: Discuss the hobby of guitar in this message board.
 
-Time spent: **X** hours spent in total
+Time spent: 6 hours spent in total
 
 ## Required Features
 
@@ -23,12 +23,12 @@ The following **required** functionality is completed:
     - title 
     - upvotes count
   - Clicking on a post should direct the user to a new page for the selected post
-- [ ] **Users can view posts in different ways**
+- [x] **Users can view posts in different ways**
   - Users can sort posts by either:
     -  creation time
     -  upvotes count
   - Users can search for posts by title
-- [] **Users can interact with each post in different ways**
+- [x] **Users can interact with each post in different ways**
   - The app includes a separate post page for each created post when clicked, where any additional information is shown, including:
     - content
     - image
@@ -68,7 +68,13 @@ The following **additional** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-
+<div>
+    <a href="https://www.loom.com/share/ddda5f16d358486fa54149d37b624594">
+    </a>
+    <a href="https://www.loom.com/share/ddda5f16d358486fa54149d37b624594">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/ddda5f16d358486fa54149d37b624594-45fffd217947a406-full-play.gif">
+    </a>
+  </div>
 
 ## Notes
 
