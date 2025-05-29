@@ -232,6 +232,7 @@ input[type=submit]:hover{
   color: white;
   margin-bottom: 30px;
   margin-top: 0px;
+  display: flex;
 }
 
 .logo {
