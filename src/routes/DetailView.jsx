@@ -2,7 +2,6 @@ import { Outlet, Link, useParams } from "react-router-dom";
 import React from "react";
 import { useState, useEffect } from "react";
 import { supabase } from "../client";
-import Card from "../components/Card";
 
 const DetailView = ({}) => {
   const { id } = useParams();

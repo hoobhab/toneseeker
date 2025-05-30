@@ -1,4 +1,3 @@
-import { Outlet, Link } from "react-router-dom";
 import React from "react";
 import { useState } from "react";
 import { supabase } from "../client";
