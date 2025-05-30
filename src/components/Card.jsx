@@ -16,10 +16,10 @@ const Card = (props) => {
           <div className="photo-icon">📷</div>
           : null}</h2>
       </Link>
-      <div className="post-created-at">
-        {props.created_at}
-      </div>
       <br></br>
+      <div className="card-image">
+        <img src={props.image}/>
+      </div>
       <div className="upvote-button">
         ⬆️  {props.upvotes}
       </div>
