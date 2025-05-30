@@ -7,7 +7,7 @@ Originally intended for guitar discussion.
 
 ## How to run:
 This app uses Supabase for its backend server. Create a Supabase table with the following columns:
-![A screenshot of the columns needed for this app's table. From left to right, title, description, image, upvotes.] (https://imgur.com/a/R1IEDI7#nKMXdVY)
+# <img src='https://imgur.com/a/R1IEDI7#nKMXdVY'>
 
 Navigate to the `toneseeker` folder, then run `npm install && npm run dev` in your terminal.
 
